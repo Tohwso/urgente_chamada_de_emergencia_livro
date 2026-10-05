@@ -1,0 +1,257 @@
+.primordial-immersive {
+  position: relative;
+  left: 50%;
+  width: min(var(--reader-shell, 1200px), 100vw);
+  margin: 86px 0 104px;
+  transform: translateX(-50%);
+  color: #e9eef0;
+}
+
+.primordial-immersive__stage {
+  display: none;
+}
+
+.primordial-immersive__copy {
+  position: relative;
+  z-index: 2;
+}
+
+.primordial-immersive__beat {
+  margin: 0 auto 76px;
+}
+
+.primordial-immersive__beat-inner {
+  width: min(760px, calc(100vw - 44px));
+  margin-inline: auto;
+}
+
+.primordial-immersive__mobile-panel {
+  width: min(680px, 100vw);
+  margin: 0 auto 42px;
+  overflow: hidden;
+  background: #030408;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, .44);
+}
+
+.primordial-immersive__mobile-panel img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.primordial-immersive__signal,
+.primordial-immersive__interrupt,
+.primordial-immersive__coda {
+  color: #fff5dc;
+  font-variation-settings: "wght" 560;
+  text-shadow: 0 0 24px rgba(255, 205, 116, .46);
+}
+
+.primordial-immersive__signal {
+  margin-block: 1.7em !important;
+  font-size: clamp(26px, 5vw, 48px);
+  letter-spacing: .16em;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.primordial-immersive__interrupt {
+  margin-block: 1.5em !important;
+  font-size: clamp(30px, 6vw, 58px);
+  line-height: 1;
+}
+
+.primordial-immersive__coda {
+  margin-top: 2em !important;
+  font-size: clamp(25px, 4.4vw, 46px);
+  line-height: 1.2;
+}
+
+@media (min-width: 761px) and (prefers-reduced-motion: no-preference) {
+  .primordial-immersive.is-enhanced {
+    margin-block: 112px 148px;
+    isolation: isolate;
+  }
+
+  .primordial-immersive.is-enhanced .primordial-immersive__stage {
+    position: sticky;
+    top: 0;
+    z-index: 0;
+    display: grid;
+    height: 100svh;
+    place-items: center;
+    overflow: clip;
+    background:
+      radial-gradient(circle at 50% 44%, rgba(225, 180, 105, .11), transparent 37%),
+      radial-gradient(circle at 50% 50%, #0a0c15 0, #030408 72%);
+  }
+
+  .primordial-immersive.is-enhanced .primordial-immersive__stage::before,
+  .primordial-immersive.is-enhanced .primordial-immersive__stage::after {
+    position: absolute;
+    inset: 0;
+    content: "";
+    pointer-events: none;
+  }
+
+  .primordial-immersive.is-enhanced .primordial-immersive__stage::before {
+    z-index: 2;
+    background:
+      linear-gradient(90deg, rgba(3, 4, 8, .92), transparent 24%, transparent 76%, rgba(3, 4, 8, .92)),
+      linear-gradient(180deg, rgba(3, 4, 8, .72), transparent 15%, transparent 84%, rgba(3, 4, 8, .82));
+  }
+
+  .primordial-immersive.is-enhanced .primordial-immersive__stage::after {
+    z-index: 3;
+    opacity: .38;
+    background-image: radial-gradient(rgba(255, 227, 171, .14) .7px, transparent .7px);
+    background-size: 5px 5px;
+    mix-blend-mode: soft-light;
+  }
+
+  .primordial-immersive.is-enhanced .primordial-immersive__frame {
+    position: relative;
+    z-index: 1;
+    width: min(62.66svh, 680px, 60vw);
+    aspect-ratio: 2 / 3;
+    max-height: 94svh;
+    overflow: hidden;
+    background: #020307;
+    box-shadow:
+      0 38px 110px rgba(0, 0, 0, .72),
+      0 0 0 1px rgba(237, 210, 158, .15),
+      0 0 90px rgba(213, 165, 91, .12);
+  }
+
+  .primordial-immersive.is-enhanced .primordial-immersive__layer {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+    transform: translate3d(0, var(--primordial-image-y, 0), 0) scale(var(--primordial-image-scale, 1.035));
+    transform-origin: 50% 50%;
+    filter: brightness(var(--primordial-brightness, .94)) saturate(var(--primordial-saturation, .94));
+    will-change: opacity, transform, filter;
+  }
+
+  .primordial-immersive.is-enhanced .primordial-immersive__layer--1 {
+    z-index: 1;
+    opacity: var(--primordial-layer-1, 1);
+  }
+
+  .primordial-immersive.is-enhanced .primordial-immersive__layer--2 {
+    z-index: 2;
+    opacity: var(--primordial-layer-2, 0);
+  }
+
+  .primordial-immersive.is-enhanced .primordial-immersive__layer--3 {
+    z-index: 3;
+    opacity: var(--primordial-layer-3, 0);
+  }
+
+  .primordial-immersive.is-enhanced .primordial-immersive__veil,
+  .primordial-immersive.is-enhanced .primordial-immersive__resonance {
+    position: absolute;
+    inset: 0;
+    z-index: 4;
+    display: block;
+    pointer-events: none;
+  }
+
+  .primordial-immersive.is-enhanced .primordial-immersive__veil {
+    background:
+      radial-gradient(circle at 50% 48%, transparent 38%, rgba(1, 2, 5, .18) 78%, rgba(1, 2, 5, .54)),
+      linear-gradient(180deg, rgba(255, 221, 161, .03), rgba(0, 0, 0, calc(.04 + var(--primordial-depth, 0) * .2)));
+  }
+
+  .primordial-immersive.is-enhanced .primordial-immersive__resonance {
+    opacity: var(--primordial-resonance, 0);
+    background: radial-gradient(circle at 50% 52%, rgba(255, 236, 199, .22), transparent 7%, transparent 30%);
+    mix-blend-mode: screen;
+  }
+
+  .primordial-immersive.is-enhanced .primordial-immersive__copy {
+    margin-top: -100svh;
+  }
+
+  .primordial-immersive.is-enhanced .primordial-immersive__beat {
+    display: flex;
+    min-height: 112svh;
+    margin: 0;
+    padding: 14svh 3.5%;
+    align-items: center;
+  }
+
+  .primordial-immersive.is-enhanced .primordial-immersive__beat--left {
+    justify-content: flex-start;
+  }
+
+  .primordial-immersive.is-enhanced .primordial-immersive__beat--right {
+    justify-content: flex-end;
+  }
+
+  .primordial-immersive.is-enhanced .primordial-immersive__beat--coda {
+    min-height: 120svh;
+    align-items: flex-end;
+    padding-bottom: 22svh;
+  }
+
+  .primordial-immersive.is-enhanced .primordial-immersive__beat-inner {
+    width: min(420px, 36vw);
+    margin: 0;
+    padding: 25px 26px 22px;
+    color: rgba(242, 244, 244, .96);
+    font-size: clamp(17px, 1.45vw, 20px);
+    line-height: 1.62;
+    text-shadow: 0 2px 18px rgba(0, 0, 0, .98);
+    background: linear-gradient(135deg, rgba(2, 4, 8, .9), rgba(4, 6, 11, .7) 76%, rgba(4, 6, 11, .42));
+    border: 1px solid rgba(232, 207, 162, .15);
+    box-shadow: 0 22px 70px rgba(0, 0, 0, .4);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+  }
+
+  .primordial-immersive.is-enhanced .primordial-immersive__beat--right .primordial-immersive__beat-inner {
+    background: linear-gradient(225deg, rgba(2, 4, 8, .9), rgba(4, 6, 11, .7) 76%, rgba(4, 6, 11, .42));
+  }
+
+  .primordial-immersive.is-enhanced .primordial-immersive__beat-inner p {
+    margin-bottom: .92em;
+  }
+
+  .primordial-immersive.is-enhanced .primordial-immersive__mobile-panel {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .primordial-immersive {
+    left: auto;
+    width: auto;
+    margin: 64px -22px 88px;
+    overflow: clip;
+    transform: none;
+  }
+
+  .primordial-immersive__beat {
+    margin-bottom: 68px;
+  }
+
+  .primordial-immersive__beat-inner {
+    padding-inline: 22px;
+  }
+
+  .primordial-immersive__beat-inner p {
+    margin-bottom: 1.16em;
+  }
+}
+
+@media (min-width: 761px) and (prefers-reduced-motion: reduce) {
+  .primordial-immersive__beat-inner {
+    padding-inline: 24px;
+  }
+}
