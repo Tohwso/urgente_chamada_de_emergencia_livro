@@ -1,0 +1,264 @@
+/* O Diálogo — a infraestrutura deixa de impor um único eixo e abre caminhos.
+   Sem JavaScript, em telas pequenas ou com movimento reduzido, N46 permanece
+   como a ilustração intratexto estática já aprovada. */
+
+.agreement-immersive {
+  position: relative;
+}
+
+.agreement-immersive__media {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1672 / 941;
+  background: #111925;
+}
+
+.agreement-immersive__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.agreement-immersive__copy {
+  margin: 1.4em 0;
+}
+
+.agreement-immersive__copy p {
+  display: inline;
+  margin: 0;
+}
+
+.agreement-immersive__copy p:not(:last-child)::after {
+  content: " ";
+}
+
+.agreement-immersive__grid,
+.agreement-immersive__gate,
+.agreement-immersive__paths,
+.agreement-immersive__glow {
+  display: none;
+}
+
+@media (min-width: 761px) and (prefers-reduced-motion: no-preference) {
+  .agreement-immersive.is-enhanced {
+    position: relative;
+    left: 50%;
+    width: 100vw;
+    height: 360svh;
+    min-height: 2700px;
+    margin: 92px 0 112px;
+    transform: translateX(-50%);
+  }
+
+  .agreement-immersive.is-enhanced .agreement-immersive__stage {
+    position: sticky;
+    top: 0;
+    height: 100svh;
+    min-height: 620px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    isolation: isolate;
+    background: var(--reading-page, #03070a);
+  }
+
+  .agreement-immersive.is-enhanced .agreement-immersive__stage::before {
+    content: "";
+    position: absolute;
+    inset-block: 0;
+    left: 50%;
+    width: min(var(--reader-shell, 1200px), calc(100% - var(--reader-gutter, 64px)));
+    transform: translateX(-50%);
+    background: var(--reading-surface, #071014);
+    border-inline: 1px solid var(--reading-edge, rgba(183, 212, 225, .08));
+    box-shadow: 0 28px 100px rgba(0, 0, 0, .34);
+  }
+
+  .agreement-immersive.is-enhanced .agreement-immersive__frame {
+    z-index: 1;
+    left: auto;
+    width: min(var(--reader-shell, 1200px), calc(100vw - var(--reader-gutter, 64px)), 167.7svh);
+    margin: 0;
+    transform: none;
+    overflow: hidden;
+    box-shadow: 0 30px 96px rgba(0, 0, 0, .48), 0 0 0 1px rgba(207, 224, 255, .1);
+  }
+
+  .agreement-immersive.is-enhanced .agreement-immersive__link {
+    display: block;
+    pointer-events: none;
+  }
+
+  .agreement-immersive.is-enhanced .agreement-immersive__image {
+    transform: scale(var(--agreement-scale, 1.035));
+    transform-origin: 25% 56%;
+    filter: brightness(var(--agreement-brightness, .7)) saturate(var(--agreement-saturation, .58)) contrast(1.06);
+    will-change: transform, filter;
+  }
+
+  .agreement-immersive.is-enhanced .agreement-immersive__grid {
+    position: absolute;
+    inset: 0;
+    display: block;
+    opacity: var(--agreement-grid-opacity, .72);
+    background:
+      repeating-linear-gradient(90deg, transparent 0 10.8%, rgba(203, 223, 255, .34) 10.9% 11.05%, transparent 11.15% 20%),
+      repeating-linear-gradient(0deg, transparent 0 17.7%, rgba(203, 223, 255, .22) 17.8% 18%, transparent 18.1% 28%);
+    box-shadow: inset 0 0 130px rgba(2, 7, 14, .8);
+    mix-blend-mode: screen;
+    pointer-events: none;
+    will-change: opacity;
+  }
+
+  .agreement-immersive.is-enhanced .agreement-immersive__gate {
+    position: absolute;
+    display: block;
+    opacity: var(--agreement-gate-opacity, .82);
+    background: linear-gradient(90deg, rgba(8, 16, 27, .84), rgba(119, 151, 190, .18), rgba(8, 16, 27, .82));
+    border-inline: 1px solid rgba(220, 234, 255, .28);
+    box-shadow: 0 0 42px rgba(101, 148, 210, .14);
+    backdrop-filter: blur(2px);
+    pointer-events: none;
+    will-change: transform, opacity;
+  }
+
+  .agreement-immersive.is-enhanced .agreement-immersive__gate--one {
+    inset: -8% auto -8% 31%;
+    width: 12%;
+    transform: translate3d(calc(var(--agreement-open, 0) * -25vw), 0, 0) skewY(-7deg);
+  }
+
+  .agreement-immersive.is-enhanced .agreement-immersive__gate--two {
+    inset: -12% auto -12% 48%;
+    width: 14%;
+    transform: translate3d(0, calc(var(--agreement-open, 0) * -110%), 0) skewY(5deg);
+  }
+
+  .agreement-immersive.is-enhanced .agreement-immersive__gate--three {
+    inset: -9% auto -9% 68%;
+    width: 11%;
+    transform: translate3d(calc(var(--agreement-open, 0) * 25vw), 0, 0) skewY(-4deg);
+  }
+
+  .agreement-immersive.is-enhanced .agreement-immersive__paths {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    opacity: var(--agreement-path-opacity, 0);
+    filter: drop-shadow(0 0 7px rgba(255, 225, 164, .42));
+    pointer-events: none;
+    will-change: opacity;
+  }
+
+  .agreement-immersive.is-enhanced .agreement-immersive__paths path {
+    fill: none;
+    stroke: rgba(255, 236, 198, .72);
+    stroke-width: 1.35;
+    vector-effect: non-scaling-stroke;
+    stroke-dasharray: 1;
+    stroke-dashoffset: var(--agreement-path-offset, 1);
+  }
+
+  .agreement-immersive.is-enhanced .agreement-immersive__paths path:nth-child(even) {
+    stroke: rgba(190, 218, 255, .66);
+    stroke-width: 1.1;
+  }
+
+  .agreement-immersive.is-enhanced .agreement-immersive__glow {
+    position: absolute;
+    inset: 0;
+    display: block;
+    opacity: var(--agreement-glow-opacity, 0);
+    background: radial-gradient(circle at 25% 56%, rgba(235, 244, 255, .26), transparent 13%), radial-gradient(ellipse at 61% 48%, rgba(255, 225, 174, .12), transparent 38%);
+    mix-blend-mode: screen;
+    pointer-events: none;
+    will-change: opacity;
+  }
+
+  .agreement-immersive.is-enhanced .agreement-immersive__copy {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    display: block;
+    width: min(var(--reader-shell, 1200px), calc(100vw - var(--reader-gutter, 64px)), 167.7svh);
+    aspect-ratio: 1672 / 941;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+
+  .agreement-immersive.is-enhanced .agreement-immersive__clause {
+    position: absolute;
+    width: min(610px, 50%);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 15px 19px;
+    color: rgba(248, 249, 250, .98);
+    background: linear-gradient(90deg, rgba(4, 9, 17, .9), rgba(4, 9, 17, .67) 80%, transparent);
+    font: 520 clamp(18px, 1.65vw, 25px)/1.48 RobotoSerif, Georgia, serif;
+    text-shadow: 0 2px 16px rgba(0, 0, 0, .95);
+    backdrop-filter: blur(4px);
+    will-change: opacity, transform;
+  }
+
+  .agreement-immersive.is-enhanced .agreement-immersive__clause--1 {
+    left: 5%;
+    top: 14%;
+    opacity: var(--agreement-copy-1, 0);
+    transform: translateY(var(--agreement-copy-1-y, 10px));
+  }
+
+  .agreement-immersive.is-enhanced .agreement-immersive__clause--2 {
+    right: 4%;
+    top: 24%;
+    opacity: var(--agreement-copy-2, 0);
+    transform: translateY(var(--agreement-copy-2-y, 10px));
+    text-align: right;
+    background: linear-gradient(270deg, rgba(4, 9, 17, .9), rgba(4, 9, 17, .67) 80%, transparent);
+  }
+
+  .agreement-immersive.is-enhanced .agreement-immersive__clause--3 {
+    left: 5%;
+    bottom: 17%;
+    opacity: var(--agreement-copy-3, 0);
+    transform: translateY(var(--agreement-copy-3-y, 10px));
+  }
+
+  .agreement-immersive.is-enhanced .agreement-immersive__clause--4 {
+    right: 4%;
+    top: 16%;
+    opacity: var(--agreement-copy-4, 0);
+    transform: translateY(var(--agreement-copy-4-y, 10px));
+    text-align: right;
+    background: linear-gradient(270deg, rgba(4, 9, 17, .9), rgba(4, 9, 17, .67) 80%, transparent);
+  }
+
+  .agreement-immersive.is-enhanced .agreement-immersive__clause--5 {
+    right: 4%;
+    bottom: 11%;
+    width: min(720px, 59%);
+    opacity: var(--agreement-copy-5, 0);
+    transform: translateY(var(--agreement-copy-5-y, 10px));
+    text-align: right;
+    background: linear-gradient(270deg, rgba(4, 9, 17, .92), rgba(4, 9, 17, .7) 82%, transparent);
+  }
+
+}
+
+@media (max-height: 700px) and (min-width: 761px) {
+  .agreement-immersive.is-enhanced { min-height: 2320px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .agreement-immersive__image,
+  .agreement-immersive__grid,
+  .agreement-immersive__gate,
+  .agreement-immersive__paths,
+  .agreement-immersive__glow {
+    will-change: auto;
+  }
+}

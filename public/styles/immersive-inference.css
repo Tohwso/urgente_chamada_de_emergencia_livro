@@ -1,0 +1,240 @@
+/* A inferência de Arti — primeira apresentação da assinatura imersiva do livro.
+   Em telas pequenas ou com movimento reduzido, a arte e o parágrafo completo
+   permanecem juntos, sem depender de JavaScript. */
+
+.inference-immersive {
+  position: relative;
+  left: 50%;
+  width: 100vw;
+  margin: 64px 0;
+  transform: translateX(-50%);
+}
+
+.inference-immersive__stage {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.inference-immersive__frame {
+  position: relative;
+  z-index: 1;
+  left: auto;
+  width: min(var(--reader-shell, 1200px), calc(100vw - var(--reader-gutter, 64px)));
+  margin: 0;
+  transform: none;
+  overflow: hidden;
+  background: #050b12;
+  box-shadow: 0 28px 90px rgba(0, 0, 0, .42);
+}
+
+.inference-immersive__link,
+.inference-immersive__media {
+  display: block;
+}
+
+.inference-immersive__media {
+  position: relative;
+  aspect-ratio: 1672 / 941;
+  overflow: hidden;
+}
+
+.inference-immersive__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.inference-immersive__veil {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(1, 5, 10, .22), transparent 34%, transparent 61%, rgba(1, 5, 10, .74));
+  pointer-events: none;
+}
+
+.inference-immersive__screen-dark {
+  display: none;
+}
+
+.inference-immersive__copy {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: clamp(18px, 4vw, 48px);
+  box-sizing: border-box;
+  color: rgba(248, 249, 250, .98);
+  background: linear-gradient(0deg, rgba(2, 7, 13, .9), rgba(2, 7, 13, .56) 72%, transparent);
+  font: 520 clamp(16px, 1.6vw, 23px)/1.55 RobotoSerif, Georgia, serif;
+  text-shadow: 0 2px 15px rgba(0, 0, 0, .95);
+  pointer-events: none;
+}
+
+.inference-immersive__clause {
+  display: inline;
+  margin: 0;
+}
+
+.inference-immersive__clause:not(:last-child)::after {
+  content: " ";
+}
+
+@media (min-width: 761px) and (prefers-reduced-motion: no-preference) {
+  .inference-immersive.is-enhanced {
+    height: 240svh;
+    min-height: 2000px;
+    margin: 88px 0 104px;
+  }
+
+  .inference-immersive.is-enhanced .inference-immersive__stage {
+    position: sticky;
+    top: 0;
+    height: 100svh;
+    min-height: 620px;
+    overflow: hidden;
+    isolation: isolate;
+    background: var(--reading-page, #03070a);
+  }
+
+  .inference-immersive.is-enhanced .inference-immersive__stage::before {
+    content: "";
+    position: absolute;
+    inset-block: 0;
+    left: 50%;
+    width: min(var(--reader-shell, 1200px), calc(100% - var(--reader-gutter, 64px)));
+    transform: translateX(-50%);
+    background: var(--reading-surface, #071014);
+    border-inline: 1px solid var(--reading-edge, rgba(183, 212, 225, .08));
+    box-shadow: 0 28px 100px rgba(0, 0, 0, .34);
+  }
+
+  .inference-immersive.is-enhanced .inference-immersive__frame {
+    width: min(var(--reader-shell, 1200px), calc(100vw - var(--reader-gutter, 64px)), 167.7svh);
+    opacity: var(--inference-image-opacity, .42);
+    box-shadow: 0 30px 96px rgba(0, 0, 0, .5), 0 0 0 1px rgba(184, 216, 240, .1);
+    will-change: opacity;
+  }
+
+  .inference-immersive.is-enhanced .inference-immersive__link {
+    pointer-events: none;
+  }
+
+  .inference-immersive.is-enhanced .inference-immersive__image {
+    transform: scale(var(--inference-scale, 1.065));
+    transform-origin: 54% 48%;
+    filter: brightness(var(--inference-brightness, .62)) saturate(.82);
+    will-change: transform, filter;
+  }
+
+  .inference-immersive.is-enhanced .inference-immersive__veil {
+    background: radial-gradient(ellipse at 53% 49%, transparent 30%, rgba(1, 5, 10, .12) 67%, rgba(1, 5, 10, .58));
+  }
+
+  .inference-immersive.is-enhanced .inference-immersive__screen-dark {
+    position: absolute;
+    z-index: 1;
+    inset: 8.7% 8.5% 20.5%;
+    display: block;
+    opacity: var(--inference-screen-dark, 1);
+    background: #000307;
+    box-shadow: inset 0 0 70px rgba(0, 0, 0, .94);
+    pointer-events: none;
+    will-change: opacity;
+  }
+
+  .inference-immersive.is-enhanced .inference-immersive__copy {
+    inset: 8.7% 8.5% 20.5%;
+    width: auto;
+    padding: 0;
+    background: none;
+    overflow: hidden;
+  }
+
+  .inference-immersive.is-enhanced .inference-immersive__clause {
+    position: absolute;
+    display: block;
+    width: min(520px, 60%);
+    box-sizing: border-box;
+    padding: 14px 18px;
+    background: linear-gradient(90deg, rgba(2, 7, 13, .9), rgba(2, 7, 13, .66) 82%, transparent);
+    font: 520 clamp(18px, 1.62vw, 24px)/1.48 RobotoSerif, Georgia, serif;
+    opacity: 0;
+    backdrop-filter: blur(4px);
+    will-change: opacity, transform;
+  }
+
+  .inference-immersive.is-enhanced .inference-immersive__clause::after {
+    content: none;
+  }
+
+  .inference-immersive.is-enhanced .inference-immersive__clause--1 {
+    left: 3%;
+    top: 7%;
+    opacity: var(--inference-copy-1, 0);
+    transform: translateY(var(--inference-copy-1-y, 10px));
+  }
+
+  .inference-immersive.is-enhanced .inference-immersive__clause--2 {
+    right: 3%;
+    top: 12%;
+    text-align: right;
+    opacity: var(--inference-copy-2, 0);
+    transform: translateY(var(--inference-copy-2-y, 10px));
+    background: linear-gradient(270deg, rgba(2, 7, 13, .9), rgba(2, 7, 13, .66) 82%, transparent);
+  }
+
+  .inference-immersive.is-enhanced .inference-immersive__clause--3 {
+    left: 3%;
+    bottom: 11%;
+    opacity: var(--inference-copy-3, 0);
+    transform: translateY(var(--inference-copy-3-y, 10px));
+  }
+
+  .inference-immersive.is-enhanced .inference-immersive__clause--4 {
+    right: 3%;
+    top: 7%;
+    width: min(620px, 72%);
+    text-align: right;
+    opacity: var(--inference-copy-4, 0);
+    transform: translateY(var(--inference-copy-4-y, 10px));
+    background: linear-gradient(270deg, rgba(2, 7, 13, .9), rgba(2, 7, 13, .66) 82%, transparent);
+  }
+
+  .inference-immersive.is-enhanced .inference-immersive__clause--5 {
+    right: 3%;
+    bottom: 7%;
+    width: min(570px, 58%);
+    text-align: right;
+    font-size: clamp(23px, 2.2vw, 34px);
+    opacity: var(--inference-copy-5, 0);
+    transform: translateY(var(--inference-copy-5-y, 12px));
+    background: linear-gradient(270deg, rgba(2, 7, 13, .94), rgba(2, 7, 13, .7) 82%, transparent);
+  }
+}
+
+@media (max-width: 760px) {
+  .inference-immersive__frame {
+    width: 100vw;
+  }
+
+  .inference-immersive__copy {
+    padding: 18px 22px 20px;
+    font-size: clamp(14px, 4vw, 17px);
+    line-height: 1.45;
+  }
+}
+
+@media (max-height: 700px) and (min-width: 761px) {
+  .inference-immersive.is-enhanced { min-height: 1700px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .inference-immersive__image,
+  .inference-immersive__frame,
+  .inference-immersive__screen-dark,
+  .inference-immersive__clause {
+    will-change: auto;
+  }
+}

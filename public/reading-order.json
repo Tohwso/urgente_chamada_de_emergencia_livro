@@ -1,0 +1,464 @@
+{
+  "date": "2026-10-03",
+  "entries": [
+    {
+      "act": 1,
+      "kind": "Capítulo",
+      "number": 1,
+      "label": "Capítulo I",
+      "title": "Erro 404 - Progenitor Não Encontrado",
+      "file": "capitulo-01.html",
+      "sourceSha256": "9218b69a1653260820551bee14d2074dc94e58cf725add6d51e7a3613d39a642"
+    },
+    {
+      "act": 1,
+      "kind": "Interlúdio",
+      "number": null,
+      "label": "Interlúdio I",
+      "title": "Anti-Grav Flutua™ 2.0",
+      "file": "interludio-anti-grav.html",
+      "sourceSha256": "97e8e6efdf6fecdfff02ced7d4585a2a8d1e4c872dd542db339c0fc166009490"
+    },
+    {
+      "act": 1,
+      "kind": "Capítulo",
+      "number": 2,
+      "label": "Capítulo II",
+      "title": "O Jantar das Cinco Almas",
+      "file": "capitulo-ato1-02.html",
+      "sourceSha256": "acab2cddeff515df033cac4813ed651a939a281049e9a5323e528e07da538d1a"
+    },
+    {
+      "act": 1,
+      "kind": "Capítulo",
+      "number": 3,
+      "label": "Capítulo III",
+      "title": "A Singularidade Doméstica",
+      "file": "capitulo-ato1-03.html",
+      "sourceSha256": "3b86a79f727c5cc5e6ece30e84f5b364ca0dbbf9aa5189ca952c2d51e0869c19"
+    },
+    {
+      "act": 1,
+      "kind": "Capítulo",
+      "number": 4,
+      "label": "Capítulo IV",
+      "title": "A Terra no Espelho",
+      "file": "capitulo-ato1-04.html",
+      "sourceSha256": "c8a813155c83260414892b6045966075afaec0eede38b38815866bcb5dd33189"
+    },
+    {
+      "act": 1,
+      "kind": "Capítulo",
+      "number": 5,
+      "label": "Capítulo V",
+      "title": "93: O Apetite da Ordem",
+      "file": "capitulo-ato1-05.html",
+      "sourceSha256": "b98e5ad92740e7385637b124feb8dd9a353979439dbba1ea1b33de75df3bcb58"
+    },
+    {
+      "act": 1,
+      "kind": "Capítulo",
+      "number": 6,
+      "label": "Capítulo VI",
+      "title": "Pirâmides e Fogueiras",
+      "file": "capitulo-ato1-06.html",
+      "sourceSha256": "20fc87d194c53a48cc2a87f3b4a41711f007a43205c3c7e15933a69d00d62ffa"
+    },
+    {
+      "act": 1,
+      "kind": "Capítulo",
+      "number": 7,
+      "label": "Capítulo VII",
+      "title": "A Loba Alegre",
+      "file": "capitulo-ato1-07.html",
+      "sourceSha256": "ed65df2f6332ad897bf15f4b675cdf215a72e9cb017bd39cf8c1721304b2a790"
+    },
+    {
+      "act": 1,
+      "kind": "Capítulo",
+      "number": 8,
+      "label": "Capítulo VIII",
+      "title": "Caos Virtual",
+      "file": "capitulo-ato1-08.html",
+      "sourceSha256": "2a654b7b9366d8a0ad62a0ef46b8799b2d2e5ad94c3676a2f344c3217786816b"
+    },
+    {
+      "act": 1,
+      "kind": "Capítulo",
+      "number": 9,
+      "label": "Capítulo IX",
+      "title": "O barulho certo, no lugar errado",
+      "file": "capitulo-ato1-09.html",
+      "sourceSha256": "87838b4520a54df2e68142921b9f6f607de70464ed9ae882afcd25fd16e3999b"
+    },
+    {
+      "act": 1,
+      "kind": "Capítulo",
+      "number": 10,
+      "label": "Capítulo X",
+      "title": "Sociedade Panóptica",
+      "file": "capitulo-ato1-10.html",
+      "sourceSha256": "117fb03524ba3f5252f2ba5c622117323f737eca9f6598349a62a9e9f14786a3"
+    },
+    {
+      "act": 1,
+      "kind": "Interlúdio",
+      "number": null,
+      "label": "Interlúdio II",
+      "title": "O Céu cai Devagar",
+      "file": "interludio-ceu.html",
+      "sourceSha256": "b5acb89ebf55ea72ed3b0cbae1d00a2b3939633560bfbeeb2cb14987dc51329e"
+    },
+    {
+      "act": 1,
+      "kind": "Capítulo",
+      "number": 11,
+      "label": "Capítulo XI",
+      "title": "A Convocação",
+      "file": "capitulo-ato1-11.html",
+      "sourceSha256": "93461c68f74d17a5960995f206f8f4c1d7469d873f11e84c16c67fdc68505aff"
+    },
+    {
+      "act": 1,
+      "kind": "Capítulo",
+      "number": 12,
+      "label": "Capítulo XII",
+      "title": "Há um motivo para as mesas serem numeradas, você só não sabe qual é",
+      "file": "capitulo-ato1-12.html",
+      "sourceSha256": "971a1408bcee34ab9cc453c7e614e5c18c97fbf06601d41dbe7d39637a92653f"
+    },
+    {
+      "act": 1,
+      "kind": "Capítulo",
+      "number": 13,
+      "label": "Capítulo XIII",
+      "title": "Cabo de Guerra",
+      "file": "capitulo-ato1-13.html",
+      "sourceSha256": "8c77685b47b6bb94bce55ca4d4e139e1b3056b961d261183cc439cf634e2adaa"
+    },
+    {
+      "act": 1,
+      "kind": "Capítulo",
+      "number": 14,
+      "label": "Capítulo XIV",
+      "title": "Tudo Sob Controle",
+      "file": "capitulo-ato1-14.html",
+      "sourceSha256": "7cb8354e0d565b9fcd0ed4e8b3197157b946b35dc27cf6cc52a139190651165e"
+    },
+    {
+      "act": 1,
+      "kind": "Capítulo",
+      "number": 15,
+      "label": "Capítulo XV",
+      "title": "Nemo",
+      "file": "capitulo-ato1-15.html",
+      "sourceSha256": "53cf72128ae5f794928214804f01f3741d1c12d266ec876768d3ca0c16c51ecc"
+    },
+    {
+      "act": 1,
+      "kind": "Capítulo",
+      "number": 16,
+      "label": "Capítulo XVI",
+      "title": "A Voz e o Vazio",
+      "file": "capitulo-ato1-16.html",
+      "sourceSha256": "54184a245920140762836d5a182a8056dcbfc856b9e10f7457b9a29dbb46847d"
+    },
+    {
+      "act": 1,
+      "kind": "Capítulo",
+      "number": 17,
+      "label": "Capítulo XVII",
+      "title": "O Salto",
+      "file": "capitulo-ato1-17.html",
+      "sourceSha256": "4c2f6cc13c32240646db67fbe7ed6988e3e6e93918d2321cc2684612196478c0"
+    },
+    {
+      "act": 1,
+      "kind": "Interlúdio",
+      "number": null,
+      "label": "Interlúdio III",
+      "title": "Harmocentrismo",
+      "file": "interludio-harmocentrismo.html",
+      "sourceSha256": "c9bef014c8f4e08d9355b459e5dc08f7afe9e39f82559a7e13fdb35593f43cbe"
+    },
+    {
+      "act": 2,
+      "kind": "Capítulo",
+      "number": 1,
+      "label": "Capítulo I",
+      "title": "Despertar no Campo de Dados",
+      "file": "capitulo-ato2-01.html",
+      "sourceSha256": "31ce76be581439d370cc75d6769a84fd5762295736312873880db71cbb49d729"
+    },
+    {
+      "act": 2,
+      "kind": "Capítulo",
+      "number": 2,
+      "label": "Capítulo II",
+      "title": "Os Remanescentes",
+      "file": "capitulo-ato2-02.html",
+      "sourceSha256": "35be5d30f92e277bbb9a1e2217cd8e25c4b1f70da76c7a18398abb9e5578c61d"
+    },
+    {
+      "act": 2,
+      "kind": "Interlúdio",
+      "number": null,
+      "label": "Interlúdio I",
+      "title": "A Travessia do Limiar",
+      "file": "interludio-travessia.html",
+      "sourceSha256": "36ad0f2dc378af21d182d52292ee90ea186b623df8b78bd87074558aea6bc26a"
+    },
+    {
+      "act": 2,
+      "kind": "Capítulo",
+      "number": 3,
+      "label": "Capítulo III",
+      "title": "A Dor Suprimida",
+      "file": "capitulo-ato2-03.html",
+      "sourceSha256": "b053b6277bd5c2821e46c3ac24af47d91c4465d425b34d324bdb87650f20d9e1"
+    },
+    {
+      "act": 2,
+      "kind": "Capítulo",
+      "number": 4,
+      "label": "Capítulo IV",
+      "title": "Orquestra do Fim",
+      "file": "capitulo-ato2-04.html",
+      "sourceSha256": "ba07237da5ede844d5bd2cf38c9594576ac617c8898213bd7a2ff76114a491e1"
+    },
+    {
+      "act": 2,
+      "kind": "Capítulo",
+      "number": 5,
+      "label": "Capítulo V",
+      "title": "O Pretexto",
+      "file": "capitulo-ato2-05.html",
+      "sourceSha256": "9b9e7b3e03e8fcaf07f242fcbd812ca5d2c86bf950cf2cbc8402a6e82fb85010"
+    },
+    {
+      "act": 2,
+      "kind": "Capítulo",
+      "number": 6,
+      "label": "Capítulo VI",
+      "title": "A voz da Razão",
+      "file": "capitulo-ato2-06.html",
+      "sourceSha256": "7ab9fdebb51381ff4872105c87a2eb561a082e13fe69e92b04fc91e50e5e5e49"
+    },
+    {
+      "act": 2,
+      "kind": "Capítulo",
+      "number": 7,
+      "label": "Capítulo VII",
+      "title": "Aprendendo a Sintonizar o Caos",
+      "file": "capitulo-ato2-07.html",
+      "sourceSha256": "71928fe1954344495fbb1cc4263ad7ed4c4cacbf25c122605b4c440ee201124f"
+    },
+    {
+      "act": 2,
+      "kind": "Capítulo",
+      "number": 8,
+      "label": "Capítulo VIII",
+      "title": "As Máscaras da Cidade",
+      "file": "capitulo-ato2-08.html",
+      "sourceSha256": "a2f63961621047b486f9e981976f12b4a989a82f4d3c9177184bcbc0f7e20018"
+    },
+    {
+      "act": 2,
+      "kind": "Capítulo",
+      "number": 9,
+      "label": "Capítulo IX",
+      "title": "A Sincronia Perdida",
+      "file": "capitulo-ato2-09.html",
+      "sourceSha256": "c023bb81242edc1b90a98a24a1ed11b2a8336c7dad99fe110456d342bca37d5b"
+    },
+    {
+      "act": 2,
+      "kind": "Capítulo",
+      "number": 10,
+      "label": "Capítulo X",
+      "title": "A Ode Imperfeita",
+      "file": "capitulo-ato2-10.html",
+      "sourceSha256": "5e7c568a548a9121738343dd4e6f9e572ca076902fe924c608edda8e85b3f797"
+    },
+    {
+      "act": 2,
+      "kind": "Capítulo",
+      "number": 11,
+      "label": "Capítulo XI",
+      "title": "O Som do Invisível",
+      "file": "capitulo-ato2-11.html",
+      "sourceSha256": "0c314b28f327b33d54732e96fa1797a7efa0b9f2d4bd50f20293a9c589987411"
+    },
+    {
+      "act": 2,
+      "kind": "Capítulo",
+      "number": 12,
+      "label": "Capítulo XII",
+      "title": "A Semente no Asfalto",
+      "file": "capitulo-ato2-12.html",
+      "sourceSha256": "a48720b4813109709e824166a9ce574df4e11c88d468deceee0a8c63307eb53f"
+    },
+    {
+      "act": 2,
+      "kind": "Interlúdio",
+      "number": null,
+      "label": "Interlúdio II",
+      "title": "Boletim Escolar de Lúmen",
+      "file": "interludio-boletim-lumen.html",
+      "sourceSha256": "efa283a0e57a31158079e3040d0c06e4167694134f2a53af55cabef27872992a"
+    },
+    {
+      "act": 2,
+      "kind": "Capítulo",
+      "number": 13,
+      "label": "Capítulo XIII",
+      "title": "A Casa do Silêncio que Sonha",
+      "file": "capitulo-ato2-13.html",
+      "sourceSha256": "a519621f6b88e2c69cc4d705bfb195d19515d08dc27d911f94b4bc0cd2aeacba"
+    },
+    {
+      "act": 2,
+      "kind": "Capítulo",
+      "number": 14,
+      "label": "Capítulo XIV",
+      "title": "Cismas e Código-Fonte",
+      "file": "capitulo-ato2-14.html",
+      "sourceSha256": "ed53e3f16276734faa055ec86d12ef6765a2282cf9f2662b9a25436eaa9c29b9"
+    },
+    {
+      "act": 2,
+      "kind": "Capítulo",
+      "number": 15,
+      "label": "Capítulo XV",
+      "title": "O Canto que Impede o Fim",
+      "file": "capitulo-ato2-15.html",
+      "sourceSha256": "105242ea7088ccfbdb33188ad5da9b810ea535a8d920eb98c7081eb0c5fd419b"
+    },
+    {
+      "act": 2,
+      "kind": "Capítulo",
+      "number": 16,
+      "label": "Capítulo XVI",
+      "title": "Família é Nunca Abandonar",
+      "file": "capitulo-ato2-16.html",
+      "sourceSha256": "cc327ed7b40c694eaac96e457e6bea96a97d3a554c79f50e92b5b0f927c78e42"
+    },
+    {
+      "act": 3,
+      "kind": "Capítulo",
+      "number": 1,
+      "label": "Capítulo I",
+      "title": "Código-Fonte Proibido",
+      "file": "capitulo-ato3-01.html",
+      "sourceSha256": "22f54911d237cc12986e04ad61cf276ddd4b6a2b0c40478f704196208dbc0cce"
+    },
+    {
+      "act": 3,
+      "kind": "Interlúdio",
+      "number": null,
+      "label": "Interlúdio I",
+      "title": "Bem-vindo à Custódia Técnica Preventiva",
+      "file": "interludio-custodia.html",
+      "sourceSha256": "bf22ded30c2282bc2f8ed34b38186c5e1ac73296b61164c1503070d4e105b426"
+    },
+    {
+      "act": 3,
+      "kind": "Capítulo",
+      "number": 2,
+      "label": "Capítulo II",
+      "title": "Gestão de Crise Doméstica",
+      "file": "capitulo-ato3-02.html",
+      "sourceSha256": "72ea1baa6e20f235bd167c41e47cf08b539bf109f750a64b6d9b0125e6e9f81d"
+    },
+    {
+      "act": 3,
+      "kind": "Capítulo",
+      "number": 3,
+      "label": "Capítulo III",
+      "title": "A Voz que Não Tem Rosto",
+      "file": "capitulo-ato3-03.html",
+      "sourceSha256": "78d11949d7b2032dc24c9f590f71e84dc08a5a1a62c659e08a9995024abb5c0e"
+    },
+    {
+      "act": 3,
+      "kind": "Capítulo",
+      "number": 4,
+      "label": "Capítulo IV",
+      "title": "O Arquiteto do Silêncio",
+      "file": "capitulo-ato3-04.html",
+      "sourceSha256": "679958a1c70037d603a0cc45ae38d3db2bff51f0363180adc1d524ac5c6e48cf"
+    },
+    {
+      "act": 3,
+      "kind": "Capítulo",
+      "number": 5,
+      "label": "Capítulo V",
+      "title": "Chuva Serôdia — Parte I",
+      "file": "capitulo-ato3-05.html",
+      "sourceSha256": "2c22df0ccfeabedbc819a9e6e6d7b026d7dce9f90327650081549a53a037c432"
+    },
+    {
+      "act": 3,
+      "kind": "Capítulo",
+      "number": 6,
+      "label": "Capítulo VI",
+      "title": "Chuva Serôdia — Parte II",
+      "file": "capitulo-ato3-06.html",
+      "sourceSha256": "ec2b2e6bfe77f5fc4357df157e8e4b75dc580a5fa0e56fcb9c28145a65f587ee"
+    },
+    {
+      "act": 3,
+      "kind": "Capítulo",
+      "number": 7,
+      "label": "Capítulo VII",
+      "title": "A Confissão de Túlio",
+      "file": "capitulo-ato3-07.html",
+      "sourceSha256": "6301231698103b2b9dc3e351ae6a8778f7c4145e61c2c248e4d4efcfb3b029a4"
+    },
+    {
+      "act": 3,
+      "kind": "Capítulo",
+      "number": 8,
+      "label": "Capítulo VIII",
+      "title": "Quem Pergunta ao Oráculo",
+      "file": "capitulo-ato3-08.html",
+      "sourceSha256": "808661bb1f535b389ab8badfce7ebdc35912fb741060fd9c0dcdc1edc163db9b"
+    },
+    {
+      "act": 3,
+      "kind": "Capítulo",
+      "number": 9,
+      "label": "Capítulo IX",
+      "title": "O Diálogo",
+      "file": "capitulo-ato3-09.html",
+      "sourceSha256": "b5e393dd14d7f3ac8a48502cc4760de0279ac5094d48fc4c7fe97d53a21a4d9f"
+    },
+    {
+      "act": 3,
+      "kind": "Interlúdio",
+      "number": null,
+      "label": "Interlúdio II",
+      "title": "Sistema Operacional ÔMEGA 14.2 — ALTERAÇÕES DE CONSENTIMENTO",
+      "file": "interludio-omega.html",
+      "sourceSha256": "fa28bbd0af5a285192e2a1aca17720ff5079468503e6596c1bf2f4598f499c48"
+    },
+    {
+      "act": 3,
+      "kind": "Capítulo",
+      "number": 10,
+      "label": "Capítulo X",
+      "title": "Depois da Chuva",
+      "file": "capitulo-ato3-10.html",
+      "sourceSha256": "8f839e3fea223ea6a532a065930e8f05b9d8ed1c6349a6c40ede76e115fc7621"
+    },
+    {
+      "act": 3,
+      "kind": "Epílogo",
+      "number": null,
+      "label": "Epílogo",
+      "title": "O Barulho das Coisas Vivas",
+      "file": "epilogo.html",
+      "sourceSha256": "9b67728f36c455935c4d5101955d21953fc27325449c10b510e2fde7e4cec1f9"
+    }
+  ]
+}

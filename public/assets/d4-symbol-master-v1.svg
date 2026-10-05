@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 268" role="img" aria-labelledby="title desc">
+	<title id="title">D4 — Monumental, master vetorial v1</title>
+	<desc id="desc">Símbolo monocromático simétrico: duas massas verticais, eixo interrompido, singularidade circular e incisões laterais.</desc>
+	<defs>
+		<mask id="d4-cut" maskUnits="userSpaceOnUse" x="0" y="0" width="128" height="268">
+			<rect width="128" height="268" fill="white"/>
+			<rect x="58" width="12" height="268" fill="black"/>
+			<circle cx="64" cy="134" r="34" fill="black"/>
+			<rect x="-4" y="130" width="22" height="8" rx="4" fill="black"/>
+			<rect x="110" y="130" width="22" height="8" rx="4" fill="black"/>
+		</mask>
+	</defs>
+	<path fill="currentColor" mask="url(#d4-cut)" d="M58 0 0 47v174l58 47h12l58-47V47L70 0Z"/>
+	<circle fill="currentColor" cx="64" cy="134" r="19"/>
+</svg>

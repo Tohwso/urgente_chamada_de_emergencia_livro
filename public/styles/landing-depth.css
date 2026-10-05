@@ -1,0 +1,8 @@
+/* Progressive enhancement: the default composition is the approved static baseline. */
+@media(min-width:901px) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+  #p1-official-baseline .official-hero.depth-enabled{overflow:clip}
+  #p1-official-baseline .official-hero.depth-enabled::before{transform:translate3d(0,var(--city-depth,0px),0)}
+  #p1-official-baseline .official-hero.depth-enabled .book-stage{transform:translate3d(0,var(--book-depth,0px),0)}
+  #p1-official-baseline .official-hero.depth-enabled.depth-visible::before,
+  #p1-official-baseline .official-hero.depth-enabled.depth-visible .book-stage{will-change:transform}
+}

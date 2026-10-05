@@ -1,0 +1,103 @@
+:root {
+  --reader-shell: 1200px;
+  --reader-gutter: 64px;
+  --reading-page: #03070a;
+  --reading-surface: #071014;
+  --reading-edge: rgba(183, 212, 225, .08);
+}
+
+.reader-header,
+.book-sequence,
+.reader-footer { box-sizing: border-box; }
+
+header.reader-header {
+  position: relative;
+  z-index: 3;
+  width: min(var(--reader-shell), calc(100% - var(--reader-gutter)));
+  margin: 0 auto;
+  min-height: 80px;
+  padding: 18px 0;
+  border: 0;
+  border-bottom: 1px solid rgba(184, 212, 220, .28);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  color: #a8bdc4;
+  background: transparent;
+  font: 11px/1.6 RobotoSerif, Georgia, serif;
+  font-variation-settings: "wght" 410, "wdth" 96, "opsz" 48;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.reader-location { margin-left: auto; text-align: right; }
+.reader-position { flex: 0 0 auto; padding-left: 14px; border-left: 1px solid rgba(184, 212, 220, .28); color: #c9d8dc; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.reader-brand { display: inline-flex; align-items: center; gap: 12px; min-width: 0; color: #edf1f3; text-decoration: none; font-weight: 570; }
+.reader-brand img { display: block; width: 20px; height: 30px; object-fit: contain; filter: invert(1); }
+.reader-brand strong { color: #22c9cd; font-weight: 700; }
+.reader-brand-subtitle { color: #edf1f3; font-size: inherit; }
+
+.book-sequence {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: start;
+  gap: 24px;
+  width: min(var(--reader-shell), calc(100% - var(--reader-gutter)));
+  margin: 70px auto 0;
+  padding: 26px 22px 40px;
+  border: 0;
+  border-top: 1px solid rgba(120, 148, 158, .4);
+  background: #081216;
+  color: #b8d4dc;
+  text-align: left;
+  text-transform: none;
+  font: 16px/1.6 system-ui, sans-serif;
+  letter-spacing: normal;
+}
+.book-sequence a { display: block; color: inherit; text-decoration: none; overflow-wrap: anywhere; font: inherit; letter-spacing: normal; text-transform: none; }
+.book-sequence a:hover { text-decoration: underline; }
+.book-sequence a:focus-visible, .reader-brand:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
+.book-sequence small { display: block; font-size: 12px; letter-spacing: .08em; margin-bottom: 8px; }
+.book-sequence span { display: block; }
+.book-sequence .sequence-index { text-align: center; font-size: 14px; }
+.book-sequence .sequence-next { text-align: right; }
+
+.book-sequence.book-sequence--top {
+  position: relative;
+  z-index: 3;
+  width: min(var(--reader-shell), calc(100% - var(--reader-gutter)));
+  margin: 0 auto;
+  padding: 13px 0;
+  border: 0;
+  border-bottom: 1px solid rgba(120, 148, 158, .22);
+  background: transparent;
+  font-size: 12px;
+  line-height: 1.4;
+}
+.book-sequence--top small { margin: 0; font-size: inherit; }
+.book-sequence--top .sequence-index { font-size: inherit; }
+
+footer.reader-footer { display: block; width: 100%; max-width: none; margin: 0; padding: 0 0 36px; border: 0; background: transparent; color: #b8d4dc; text-transform: none; letter-spacing: normal; }
+footer.reader-footer .book-sequence { margin-top: 70px; margin-bottom: 0; }
+body[data-reader-opening] main { display: block; min-height: 0; }
+
+@media (max-width: 760px) {
+  .reader-brand-subtitle { display: none; }
+}
+@media (max-width: 600px) {
+  :root { --reader-gutter: 40px; }
+  header.reader-header, .book-sequence.book-sequence--top { width: calc(100% - 40px); }
+  header.reader-header { padding: 12px 0; font-size: 11px; flex-wrap: nowrap; }
+  .reader-brand { flex-basis: auto; }
+  .reader-location { max-width: none; margin-left: 0; }
+  .reader-position { padding-left: 8px; }
+  .book-sequence.book-sequence--top { grid-template-columns: 1fr auto 1fr; gap: 8px; font-size: 11px; }
+  .book-sequence { grid-template-columns: 1fr; gap: 24px; font-size: 15px; }
+  .book-sequence .sequence-index { text-align: left; grid-row: 1; }
+  .book-sequence .sequence-next { text-align: left; }
+  .book-sequence.book-sequence--top .sequence-index { text-align: center; grid-row: auto; }
+  .book-sequence.book-sequence--top .sequence-next { text-align: right; }
+}
+@media (max-width: 360px) {
+  .reader-location { display: none; }
+}

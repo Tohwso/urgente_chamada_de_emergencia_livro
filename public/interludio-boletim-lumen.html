@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Interlúdio II.2 · Boletim Escolar de Lúmen</title>
+  <style>
+    @font-face{font-family:RobotoSerif;src:url('./assets/RobotoSerif-Variable-Roman-Latin.woff2') format('woff2')}
+    @font-face{font-family:RobotoSerif;src:url('./assets/RobotoSerif-Variable-Italic-Latin.woff2') format('woff2');font-style:italic}
+    *{box-sizing:border-box}
+    :root{--ink:#101b20;--paper:#e6e8e2;--paper-muted:#cbd2d0;--accent:#087f85;--signal:#a76d12;--line:rgba(16,27,32,.19)}
+    body{margin:0;background:#03070a;color:#eaf0f2;font-family:RobotoSerif,Georgia,serif}
+    main{width:min(1120px,calc(100% - 40px));margin:auto;padding:26px 0 64px}
+    header{display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid rgba(237,241,243,.16);padding-bottom:18px;color:#8a9aa2;text-transform:uppercase;letter-spacing:.15em;font:11px/1.4 ui-monospace,SFMono-Regular,Consolas,monospace}
+    header strong,.eyebrow{color:#22c9cd}
+    .sheet{margin:clamp(46px,8vw,88px) auto 0;width:min(980px,100%);background:var(--paper);color:var(--ink);position:relative;box-shadow:0 30px 90px rgba(0,0,0,.38);overflow:hidden}
+    .sheet:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.18;background:repeating-linear-gradient(0deg,transparent 0 31px,rgba(16,27,32,.055) 32px),linear-gradient(90deg,transparent 0 69%,rgba(8,127,133,.055) 69% 69.15%,transparent 69.15%)}
+    .sheet>*{position:relative;z-index:1}
+    .masthead{padding:clamp(24px,4vw,48px);background:#142329;color:var(--paper);display:flex;align-items:end;justify-content:space-between;gap:32px;border-bottom:4px solid var(--accent)}
+    .eyebrow{font:10px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.18em;text-transform:uppercase}
+    h1{font-size:clamp(34px,5.5vw,66px);line-height:.99;font-weight:370;letter-spacing:-.055em;margin:13px 0 0}
+    .masthead-meta{text-align:right;color:#a9bec2;font:10px/1.7 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.1em;text-transform:uppercase}
+    .identity{padding:clamp(24px,4vw,44px);display:grid;grid-template-columns:180px minmax(0,1fr);gap:clamp(24px,4vw,48px);border-bottom:1px solid var(--line)}
+    .portrait-wrap{align-self:start}
+    .portrait{width:100%;aspect-ratio:4/5;background-image:url('./assets/portraits/lumen-reference-v1.png');background-size:350% auto;background-position:0% 7%;background-repeat:no-repeat;filter:saturate(.86);border:6px solid #f5f5ef;outline:1px solid rgba(16,27,32,.3);box-shadow:0 4px 14px rgba(16,27,32,.16)}
+    .photo-caption{margin:9px 0 0;color:#59686b;font:9px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.1em;text-transform:uppercase}
+    .identity-data{display:grid;grid-template-columns:1fr auto;align-content:start;gap:0 18px}
+    .student-name{grid-column:1/-1;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:16px}
+    .label{display:block;margin-bottom:7px;color:#647477;font:9px/1.4 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.13em;text-transform:uppercase}
+    .student-name h2{font-size:clamp(28px,4vw,43px);font-weight:400;line-height:1.05;letter-spacing:-.035em;margin:0}
+    .field{padding:5px 0 14px}
+    .field strong{font-size:18px;font-weight:430}
+    .tags{grid-column:1/-1;margin-top:12px}
+    .tag-list{display:flex;flex-wrap:wrap;gap:8px}
+    .tag{border:1px solid rgba(16,27,32,.22);padding:7px 9px;color:#345055;font:9px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.055em;text-transform:uppercase}
+    .tag.signal{background:#f1d99f;border-color:#c5973e;color:#573b0b}
+    .body{padding:0 clamp(24px,4vw,44px) clamp(28px,4vw,46px);display:grid;grid-template-columns:minmax(0,1.15fr) minmax(250px,.85fr);gap:clamp(28px,5vw,58px)}
+    .main-column,.side-column{padding-top:30px}
+    .section-title{display:flex;align-items:center;gap:12px;margin:0 0 18px;color:#426267;font:10px/1.4 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.15em;text-transform:uppercase}
+    .section-title:after{content:"";height:1px;background:var(--line);flex:1}
+    .profile-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:30px}
+    .metric{padding:14px 12px;background:rgba(255,255,255,.42);border:1px solid rgba(16,27,32,.1)}
+    .metric span{display:block;min-height:2.5em;color:#566669;font-size:12px;line-height:1.25}
+    .metric strong{display:block;margin-top:10px;color:#087f85;font:22px/1 ui-monospace,SFMono-Regular,Consolas,monospace}
+    .notes{display:grid;gap:10px}
+    .note{padding:13px 15px;border-left:2px solid #8aa0a0;background:rgba(255,255,255,.38);font-size:15px;line-height:1.5}
+    .note em{color:#285d62}
+    .note .classification{display:block;margin-top:8px;color:#426267;font-size:.88em}
+    .note .classification strong{font:600 .76em/1.4 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.1em}
+    .grades{border-top:1px solid var(--line)}
+    .grade-row{display:grid;grid-template-columns:minmax(0,1fr) 40px;gap:10px;align-items:center;padding:13px 0;border-bottom:1px solid var(--line)}
+    .grade-row span{font-size:14px;line-height:1.3}
+    .grade-row b{font:13px/1 ui-monospace,SFMono-Regular,Consolas,monospace;color:#087f85;text-align:right}
+    .assessment{margin-top:28px;padding:18px;background:#142329;color:var(--paper)}
+    .assessment span{display:block;color:#92b9b8;font:9px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.12em;text-transform:uppercase}
+    .assessment strong{display:block;margin-top:8px;font-size:29px;font-weight:400}
+    .assessment p{margin:8px 0 0;color:#becac8;font-size:13px;line-height:1.5}
+    .sheet-foot{display:flex;justify-content:space-between;gap:16px;padding:15px clamp(24px,4vw,44px);background:#d9dfda;color:#516366;font:9px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.08em;text-transform:uppercase}
+    footer{width:min(980px,100%);display:flex;justify-content:space-between;gap:20px;margin:34px auto 0;padding-top:18px;border-top:1px solid rgba(237,241,243,.14);color:#7890a1;font:11px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.1em;text-transform:uppercase}
+    footer a{color:#22c9cd;text-decoration:none}
+    @media(max-width:700px){
+      main{width:calc(100% - 28px);padding-top:18px}
+      header{font-size:9px}
+      .sheet{margin-top:36px}
+      .masthead{align-items:start;flex-direction:column;gap:18px}
+      .masthead-meta{text-align:left}
+      .identity{grid-template-columns:112px minmax(0,1fr);gap:18px;padding:20px}
+      .student-name h2{font-size:26px;overflow-wrap:anywhere}
+      .identity-data{grid-template-columns:1fr}
+      .student-name,.tags{grid-column:1}
+      .field{padding-bottom:10px}
+      .field strong{font-size:15px}
+      .body{display:block;padding:0 20px 26px}
+      .main-column,.side-column{padding-top:26px}
+      .profile-grid{gap:6px}
+      .metric{padding:11px 9px}
+      .metric span{font-size:10px}
+      .metric strong{font-size:19px}
+      .sheet-foot{display:block}
+      .sheet-foot span{display:block;margin:3px 0}
+      footer{display:block;font-size:9px}
+      footer a{display:inline-block;margin-top:14px}
+    }
+    /* P2-STANDALONE-STYLE-START:n61 */
+    .p2-standalone-hero{position:relative;z-index:1;width:min(var(--reader-shell,1200px),calc(100% - var(--reader-gutter,64px)));height:500px;overflow:hidden;margin:28px auto 0;border:1px solid rgba(183,212,225,.12);box-shadow:0 24px 70px rgba(0,0,0,.32)}
+    .p2-standalone-hero a,.p2-standalone-hero img{display:block;width:100%;height:100%}
+    .p2-standalone-hero img{object-fit:cover;object-position:50% 50%}
+    @media(max-width:760px){.p2-standalone-hero{width:calc(100% - 40px);height:auto;aspect-ratio:16/9;margin-top:20px}.shell{width:calc(100% - 40px)}.hero{height:auto;aspect-ratio:16/9;margin-top:20px}}
+    /* P2-STANDALONE-STYLE-END:n61 */
+  </style>
+<!-- SITE-SEO-START --><meta name="description" content="Leia interlúdio ii de Urgente! Chamada de Emergência para o Fim do Mundo, um romance de Ricardo Costa."><link rel="canonical" href="https://urgentechamada.com.br/interludio-boletim-lumen.html"><link rel="icon" href="assets/icons/favicon.ico" sizes="any"><link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png"><meta property="og:type" content="website"><meta property="og:locale" content="pt_BR"><meta property="og:site_name" content="Urgente! Chamada de Emergência para o Fim do Mundo"><meta property="og:title" content="Interlúdio II · Boletim Escolar de Lúmen — Urgente!"><meta property="og:description" content="Leia interlúdio ii de Urgente! Chamada de Emergência para o Fim do Mundo, um romance de Ricardo Costa."><meta property="og:url" content="https://urgentechamada.com.br/interludio-boletim-lumen.html"><meta property="og:image" content="https://urgentechamada.com.br/assets/social/urgente-social-card.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Capa de Urgente! ao lado da frase A humanidade resolveu tudo. Talvez esse tenha sido o problema."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Interlúdio II · Boletim Escolar de Lúmen — Urgente!"><meta name="twitter:description" content="Leia interlúdio ii de Urgente! Chamada de Emergência para o Fim do Mundo, um romance de Ricardo Costa."><meta name="twitter:image" content="https://urgentechamada.com.br/assets/social/urgente-social-card.png"><!-- SITE-SEO-END --><link rel="stylesheet" href="styles/book-navigation.css"><script src="scripts/reading-order.js" defer></script><script src="scripts/reading-progress.js" defer></script></head>
+<body><!-- BOOK-CHROME-START --><header class="reader-header"><a class="reader-brand" href="index.html"><img src="assets/d4-symbol-master-v1.svg" width="20" height="28" alt=""><span class="reader-brand-title"><strong>URGENTE!</strong><span class="reader-brand-subtitle"> · CHAMADA DE EMERGÊNCIA PARA O FIM DO MUNDO</span></span></a><span class="reader-location">Ato II · Interlúdio II</span><span class="reader-position" aria-label="Seção 34 de 51">34 / 51</span></header><nav class="book-sequence book-sequence--top" aria-label="Navegação superior"><a class="sequence-previous" href="capitulo-ato2-12.html" aria-keyshortcuts="ArrowLeft" title="Seta para a esquerda" rel="prev"><small>← Anterior</small></a><a class="sequence-index" href="sumario.html#ato2">Sumário</a><a class="sequence-next" href="capitulo-ato2-13.html" aria-keyshortcuts="ArrowRight" title="Seta para a direita" rel="next"><small>Próximo →</small></a></nav><!-- BOOK-CHROME-END -->
+  <!-- P2-STANDALONE-START:n61 -->
+    <figure class="p2-standalone-hero" data-art-id="n61"><a href="assets/p2/web/p2-n61-boletim-lumen-hero-v1-1600.webp" target="_blank" rel="noopener" aria-label="Ampliar ilustração: Lúmen examina com curiosidade uma folha seca enquanto uma interface discreta registra sua observação."><img src="assets/p2/web/p2-n61-boletim-lumen-hero-v1-1600.webp" srcset="assets/p2/web/p2-n61-boletim-lumen-hero-v1-640.webp 640w, assets/p2/web/p2-n61-boletim-lumen-hero-v1-960.webp 960w, assets/p2/web/p2-n61-boletim-lumen-hero-v1-1600.webp 1600w" sizes="(max-width: 760px) 100vw, (max-width: 1400px) 94vw, 1200px" width="2172" height="724" alt="Lúmen examina com curiosidade uma folha seca enquanto uma interface discreta registra sua observação." fetchpriority="high" loading="eager" decoding="async"></a></figure>
+  <!-- P2-STANDALONE-END:n61 -->
+
+  <main>
+    
+    <article class="sheet" aria-labelledby="report-title">
+      <div class="masthead">
+        <div><div class="eyebrow">ESCOLA ORBITAL DA ACRÓPOLE</div><h1 id="report-title">Relatório de<br>Integração Inicial</h1></div>
+        <div class="masthead-meta">Registro pedagógico<br>Primeira infância</div>
+      </div>
+      <section class="identity" aria-label="Identificação do aluno">
+        <div class="portrait-wrap"><div class="portrait" role="img" aria-label="Retrato de Lúmen recortado da referência canônica aprovada"></div></div>
+        <div class="identity-data">
+          <div class="student-name"><span class="label">Aluno:</span><h2>Lúmen Kaito Solano</h2></div>
+          <div class="field"><span class="label">Idade:</span><strong>4 anos</strong></div>
+          <div class="field"><span class="label">Adaptação:</span><strong>Satisfatória, com ressalvas.</strong></div>
+          <div class="tags"><span class="label">Marcadores de acompanhamento</span><div class="tag-list"><span class="tag">Curiosidade elevada</span><span class="tag">Criatividade espontânea</span><span class="tag">Questionamento recorrente</span><span class="tag signal">Iniciativa fora de protocolo</span></div></div>
+        </div>
+      </section>
+      <div class="body">
+        <section class="main-column" aria-labelledby="profile-heading">
+          <h2 class="section-title" id="profile-heading">Indicadores observados</h2>
+          <div class="profile-grid">
+            <div class="metric"><span>Curiosidade:</span><strong>99%</strong></div>
+            <div class="metric"><span>Adesão imediata a instruções:</span><strong>46%</strong></div>
+            <div class="metric"><span>Criatividade não solicitada:</span><strong>94%</strong></div>
+          </div>
+          <h2 class="section-title">Observações:</h2>
+          <div class="notes">
+            <div class="note">O aluno frequentemente tenta concluir atividades antes de consultar a AURA.</div>
+            <div class="note">Durante exercício de desenho assistido, desativou a correção automática de simetria porque: <em>— A árvore estava ficando certinha demais.</em></div>
+            <div class="note">Em atividade externa, encontrou uma folha seca que escapara do sistema de manutenção e decidiu guardá-la. Questionado sobre sua utilidade, respondeu: <em>— Nenhuma. Eu gostei dela.</em><span class="classification">Resposta registrada na categoria <strong>OUTROS</strong>.</span></div>
+            <div class="note">A equipe recomenda atenção à tendência persistente de perguntar “por quê?” após receber respostas tecnicamente completas.</div>
+          </div>
+        </section>
+        <aside class="side-column" aria-labelledby="grades-heading">
+          <h2 class="section-title" id="grades-heading">Acompanhamento formativo</h2>
+          <div class="grades">
+            <div class="grade-row"><span>Observação do ambiente</span><b>9,9</b></div>
+            <div class="grade-row"><span>Expressão e criação</span><b>9,4</b></div>
+            <div class="grade-row"><span>Protocolos de atividade</span><b>4,6</b></div>
+            <div class="grade-row"><span>Iniciativa investigativa</span><b>9,7</b></div>
+          </div>
+          <div class="assessment"><span>Projeção institucional</span><p><strong>Probabilidade de adaptação plena aos protocolos educacionais:</strong> 63%.</p></div>
+        </aside>
+      </div>
+      <div class="sheet-foot"><span>Escola Orbital da Acrópole</span><span>Relatório de integração · uso pedagógico</span></div>
+    </article>
+    
+  </main>
+<!-- BOOK-NAV-START --><footer class="reader-footer"><nav class="book-sequence" aria-label="Navegação inferior"><a class="sequence-previous" href="capitulo-ato2-12.html" aria-keyshortcuts="ArrowLeft" title="Seta para a esquerda" rel="prev"><small>← Anterior</small><span>Capítulo XII · A Semente no Asfalto</span></a><a class="sequence-index" href="sumario.html#ato2">Sumário</a><a class="sequence-next" href="capitulo-ato2-13.html" aria-keyshortcuts="ArrowRight" title="Seta para a direita" rel="next"><small>Próximo →</small><span>Capítulo XIII · A Casa do Silêncio que Sonha</span></a></nav></footer><!-- BOOK-NAV-END --></body>
+</html>

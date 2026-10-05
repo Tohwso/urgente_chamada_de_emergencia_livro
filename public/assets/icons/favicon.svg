@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+	<title id="title">Urgente! — ícone oficial v1</title>
+	<desc id="desc">Símbolo D4 em ciano sobre canvas escuro arredondado.</desc>
+	<rect width="512" height="512" rx="80" fill="#03070A"/>
+	<g transform="translate(155.7 46) scale(1.567)" fill="#22C9CD">
+		<defs>
+			<mask id="d4-icon-cut" maskUnits="userSpaceOnUse" x="0" y="0" width="128" height="268">
+				<rect width="128" height="268" fill="white"/>
+				<rect x="58" width="12" height="268" fill="black"/>
+				<circle cx="64" cy="134" r="34" fill="black"/>
+				<rect x="-4" y="130" width="22" height="8" rx="4" fill="black"/>
+				<rect x="110" y="130" width="22" height="8" rx="4" fill="black"/>
+			</mask>
+		</defs>
+		<path mask="url(#d4-icon-cut)" d="M58 0 0 47v174l58 47h12l58-47V47L70 0Z"/>
+		<circle cx="64" cy="134" r="19"/>
+	</g>
+</svg>
