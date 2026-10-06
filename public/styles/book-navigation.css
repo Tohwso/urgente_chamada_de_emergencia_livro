@@ -93,8 +93,11 @@ body[data-reader-opening] main { display: block; min-height: 0; }
   .reader-position { padding-left: 8px; }
   .book-sequence.book-sequence--top { grid-template-columns: 1fr auto 1fr; gap: 8px; font-size: 11px; }
   .book-sequence { grid-template-columns: 1fr; gap: 24px; font-size: 15px; }
-  .book-sequence .sequence-index { text-align: left; grid-row: 1; }
+  .book-sequence .sequence-index { text-align: left; }
   .book-sequence .sequence-next { text-align: left; }
+  footer.reader-footer .sequence-next { grid-row: 1; }
+  footer.reader-footer .sequence-previous { grid-row: 2; }
+  footer.reader-footer .sequence-index { grid-row: 3; }
   .book-sequence.book-sequence--top .sequence-index { text-align: center; grid-row: auto; }
   .book-sequence.book-sequence--top .sequence-next { text-align: right; }
 }
