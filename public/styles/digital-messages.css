@@ -51,6 +51,7 @@ article .digital-message__content p {
 }
 
 .digital-message--sistema,
+.digital-message--acropole,
 .digital-message--telemetria,
 .digital-message--painel {
   --digital-accent: #d9bd87;
