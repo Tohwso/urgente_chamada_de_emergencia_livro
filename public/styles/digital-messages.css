@@ -1,0 +1,83 @@
+.digital-message {
+  --digital-accent: #78d5d8;
+  --digital-glow: rgba(120, 213, 216, .16);
+  position: relative;
+  margin: 2em 0;
+  padding: 1.15rem 1.25rem 1.05rem;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--digital-accent) 38%, transparent);
+  border-left: 3px solid var(--digital-accent);
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--digital-glow), transparent 55%), rgba(2, 9, 13, .82);
+  box-shadow: inset 0 1px rgba(255, 255, 255, .035), 0 16px 36px rgba(0, 0, 0, .2);
+  color: #dcebed;
+  font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", Consolas, monospace;
+  font-size: .86em;
+  line-height: 1.62;
+  letter-spacing: .018em;
+}
+
+.digital-message::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(180deg, transparent 0 3px, rgba(255, 255, 255, .014) 3px 4px);
+}
+
+.digital-message__label {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin-bottom: .7rem;
+  color: var(--digital-accent);
+  font: 650 .68rem/1.2 system-ui, sans-serif;
+  letter-spacing: .19em;
+  text-transform: uppercase;
+}
+
+.digital-message__content {
+  position: relative;
+  z-index: 1;
+}
+
+article .digital-message__content p {
+  margin: .32em 0;
+}
+
+.digital-message--aura {
+  --digital-accent: #70e4ff;
+  --digital-glow: rgba(54, 186, 231, .2);
+}
+
+.digital-message--sistema,
+.digital-message--telemetria,
+.digital-message--painel {
+  --digital-accent: #d9bd87;
+  --digital-glow: rgba(217, 189, 135, .15);
+}
+
+.digital-message--incubadora {
+  --digital-accent: #c6a7ff;
+  --digital-glow: rgba(153, 111, 228, .18);
+}
+
+.digital-message--lixeira-omega {
+  --digital-accent: #a8e08e;
+  --digital-glow: rgba(112, 190, 91, .16);
+}
+
+.digital-message--interface,
+.digital-message--distribuidor {
+  --digital-accent: #9ec8ff;
+  --digital-glow: rgba(92, 143, 211, .16);
+}
+
+@media (max-width: 760px) {
+  .digital-message {
+    margin: 1.65em 0;
+    padding: 1rem 1rem .9rem;
+    border-radius: 8px;
+    font-size: .82em;
+  }
+}

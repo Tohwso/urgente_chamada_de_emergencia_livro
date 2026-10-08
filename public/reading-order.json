@@ -8,7 +8,7 @@
       "label": "Capítulo I",
       "title": "Erro 404 - Progenitor Não Encontrado",
       "file": "capitulo-01.html",
-      "sourceSha256": "9218b69a1653260820551bee14d2074dc94e58cf725add6d51e7a3613d39a642"
+      "sourceSha256": "b2c3bc13e75641ff4ed736e0d101b290ee1cbc2eb6894eae52ba680d3548a1e2"
     },
     {
       "act": 1,
@@ -26,7 +26,7 @@
       "label": "Capítulo II",
       "title": "O Jantar das Cinco Almas",
       "file": "capitulo-ato1-02.html",
-      "sourceSha256": "acab2cddeff515df033cac4813ed651a939a281049e9a5323e528e07da538d1a"
+      "sourceSha256": "54a4f1b8ca4cefe62cf1c9de2937950ecf0afdb538e1eab146e07bed566b3470"
     },
     {
       "act": 1,
@@ -44,7 +44,7 @@
       "label": "Capítulo IV",
       "title": "A Terra no Espelho",
       "file": "capitulo-ato1-04.html",
-      "sourceSha256": "c8a813155c83260414892b6045966075afaec0eede38b38815866bcb5dd33189"
+      "sourceSha256": "7663957640805d825906ec491d0513c9ebbf23d23d18959c89fc98e61cc324b3"
     },
     {
       "act": 1,
@@ -53,7 +53,7 @@
       "label": "Capítulo V",
       "title": "93: O Apetite da Ordem",
       "file": "capitulo-ato1-05.html",
-      "sourceSha256": "b98e5ad92740e7385637b124feb8dd9a353979439dbba1ea1b33de75df3bcb58"
+      "sourceSha256": "762486d4d56fdfd5b96262e1a783d18067da5b06296b5cf55e228d4ccfa0b277"
     },
     {
       "act": 1,
@@ -62,7 +62,7 @@
       "label": "Capítulo VI",
       "title": "Pirâmides e Fogueiras",
       "file": "capitulo-ato1-06.html",
-      "sourceSha256": "20fc87d194c53a48cc2a87f3b4a41711f007a43205c3c7e15933a69d00d62ffa"
+      "sourceSha256": "80c6cc3af396164ea0fcebd47d1aaa71e725e776ce311ec16166d81735cd491d"
     },
     {
       "act": 1,
@@ -71,7 +71,7 @@
       "label": "Capítulo VII",
       "title": "A Loba Alegre",
       "file": "capitulo-ato1-07.html",
-      "sourceSha256": "ed65df2f6332ad897bf15f4b675cdf215a72e9cb017bd39cf8c1721304b2a790"
+      "sourceSha256": "531585d5df1c95280753801d61a57306a556e4e9bb6a9ab79c23e7bc34a2b8c3"
     },
     {
       "act": 1,
@@ -80,7 +80,7 @@
       "label": "Capítulo VIII",
       "title": "Caos Virtual",
       "file": "capitulo-ato1-08.html",
-      "sourceSha256": "2a654b7b9366d8a0ad62a0ef46b8799b2d2e5ad94c3676a2f344c3217786816b"
+      "sourceSha256": "76300d0ac3e0eb93b50f0fe4ddf35dd12f281d132cbcbe506392f659a9ad2687"
     },
     {
       "act": 1,
@@ -89,7 +89,7 @@
       "label": "Capítulo IX",
       "title": "O barulho certo, no lugar errado",
       "file": "capitulo-ato1-09.html",
-      "sourceSha256": "87838b4520a54df2e68142921b9f6f607de70464ed9ae882afcd25fd16e3999b"
+      "sourceSha256": "f5d10688eab928a7f5202a85f935f44412bc5bedb98e9debf954ae70cc0bed86"
     },
     {
       "act": 1,
@@ -152,7 +152,7 @@
       "label": "Capítulo XV",
       "title": "Nemo",
       "file": "capitulo-ato1-15.html",
-      "sourceSha256": "53cf72128ae5f794928214804f01f3741d1c12d266ec876768d3ca0c16c51ecc"
+      "sourceSha256": "753438eb5d0371764a0d3a0bd830c5102a384efa53499acfdd3e547c4c87510e"
     },
     {
       "act": 1,
@@ -197,7 +197,7 @@
       "label": "Capítulo II",
       "title": "Os Remanescentes",
       "file": "capitulo-ato2-02.html",
-      "sourceSha256": "35be5d30f92e277bbb9a1e2217cd8e25c4b1f70da76c7a18398abb9e5578c61d"
+      "sourceSha256": "32a96407de7e907d9486068e32ff7cc4a0baf2b5eece398163c4be6049f96d0e"
     },
     {
       "act": 2,
@@ -260,7 +260,7 @@
       "label": "Capítulo VIII",
       "title": "As Máscaras da Cidade",
       "file": "capitulo-ato2-08.html",
-      "sourceSha256": "a2f63961621047b486f9e981976f12b4a989a82f4d3c9177184bcbc0f7e20018"
+      "sourceSha256": "27993f4233dd178e3d04175d1a9bf651bed7251a856bb38a5df76d26ae829ee3"
     },
     {
       "act": 2,
@@ -278,7 +278,7 @@
       "label": "Capítulo X",
       "title": "A Ode Imperfeita",
       "file": "capitulo-ato2-10.html",
-      "sourceSha256": "5e7c568a548a9121738343dd4e6f9e572ca076902fe924c608edda8e85b3f797"
+      "sourceSha256": "06f177a0f28d1d4626b0590596f38b055fe6a83df2644a9f0a9e1ef470fcbf6b"
     },
     {
       "act": 2,
@@ -287,7 +287,7 @@
       "label": "Capítulo XI",
       "title": "O Som do Invisível",
       "file": "capitulo-ato2-11.html",
-      "sourceSha256": "0c314b28f327b33d54732e96fa1797a7efa0b9f2d4bd50f20293a9c589987411"
+      "sourceSha256": "53c4288b712586dd87f49485f5c4a7df12cb3a087f8facfb25017594689985e5"
     },
     {
       "act": 2,
@@ -296,7 +296,7 @@
       "label": "Capítulo XII",
       "title": "A Semente no Asfalto",
       "file": "capitulo-ato2-12.html",
-      "sourceSha256": "a48720b4813109709e824166a9ce574df4e11c88d468deceee0a8c63307eb53f"
+      "sourceSha256": "bd0b0f2e743014f7455033cbf6fd9bc985c1840b5c8b1596402437fc1accbb1c"
     },
     {
       "act": 2,
@@ -314,7 +314,7 @@
       "label": "Capítulo XIII",
       "title": "A Casa do Silêncio que Sonha",
       "file": "capitulo-ato2-13.html",
-      "sourceSha256": "a519621f6b88e2c69cc4d705bfb195d19515d08dc27d911f94b4bc0cd2aeacba"
+      "sourceSha256": "527c52c169717f5d07eaafb235eb175cf49f3371ea0dcb52616c29595d4be76e"
     },
     {
       "act": 2,
@@ -323,7 +323,7 @@
       "label": "Capítulo XIV",
       "title": "Cismas e Código-Fonte",
       "file": "capitulo-ato2-14.html",
-      "sourceSha256": "ed53e3f16276734faa055ec86d12ef6765a2282cf9f2662b9a25436eaa9c29b9"
+      "sourceSha256": "60c12fba7bd94de47addb3c09fdaf82457932f17aa02021b018ab0ad96873736"
     },
     {
       "act": 2,
@@ -332,7 +332,7 @@
       "label": "Capítulo XV",
       "title": "O Canto que Impede o Fim",
       "file": "capitulo-ato2-15.html",
-      "sourceSha256": "105242ea7088ccfbdb33188ad5da9b810ea535a8d920eb98c7081eb0c5fd419b"
+      "sourceSha256": "fa2cec9d466c8edce838cc384251f1eef7081ade884524ec480b0825978e0907"
     },
     {
       "act": 2,
@@ -359,7 +359,7 @@
       "label": "Interlúdio I",
       "title": "Bem-vindo à Custódia Técnica Preventiva",
       "file": "interludio-custodia.html",
-      "sourceSha256": "bf22ded30c2282bc2f8ed34b38186c5e1ac73296b61164c1503070d4e105b426"
+      "sourceSha256": "d675230548ffa8413fd709301081d017845f7c271bb82f85ec4ac2e2772c6d91"
     },
     {
       "act": 3,
@@ -368,7 +368,7 @@
       "label": "Capítulo II",
       "title": "Gestão de Crise Doméstica",
       "file": "capitulo-ato3-02.html",
-      "sourceSha256": "72ea1baa6e20f235bd167c41e47cf08b539bf109f750a64b6d9b0125e6e9f81d"
+      "sourceSha256": "59ab3a5694f2f75b486d495c2973a3ad6162bd1610517409fd7645d8fdb6458f"
     },
     {
       "act": 3,
@@ -386,7 +386,7 @@
       "label": "Capítulo IV",
       "title": "O Arquiteto do Silêncio",
       "file": "capitulo-ato3-04.html",
-      "sourceSha256": "679958a1c70037d603a0cc45ae38d3db2bff51f0363180adc1d524ac5c6e48cf"
+      "sourceSha256": "4f25e5ca889b6da1ba85420bbeeda3203acaf08cbaaf092ac7c8272bc3eaead2"
     },
     {
       "act": 3,
@@ -395,7 +395,7 @@
       "label": "Capítulo V",
       "title": "Chuva Serôdia — Parte I",
       "file": "capitulo-ato3-05.html",
-      "sourceSha256": "2c22df0ccfeabedbc819a9e6e6d7b026d7dce9f90327650081549a53a037c432"
+      "sourceSha256": "dd1b44d13d26bdef3d7b99fcc4fd6d4d97ca3e55047c9410d2755e977cc0e106"
     },
     {
       "act": 3,
@@ -404,7 +404,7 @@
       "label": "Capítulo VI",
       "title": "Chuva Serôdia — Parte II",
       "file": "capitulo-ato3-06.html",
-      "sourceSha256": "ec2b2e6bfe77f5fc4357df157e8e4b75dc580a5fa0e56fcb9c28145a65f587ee"
+      "sourceSha256": "ee89a3e2ba7005ec3d6dd5ac96d4823458da749cfa4a5ace10c04c84a2748ebf"
     },
     {
       "act": 3,
@@ -422,7 +422,7 @@
       "label": "Capítulo VIII",
       "title": "Quem Pergunta ao Oráculo",
       "file": "capitulo-ato3-08.html",
-      "sourceSha256": "808661bb1f535b389ab8badfce7ebdc35912fb741060fd9c0dcdc1edc163db9b"
+      "sourceSha256": "efcb5562e9b7d5fce20b694e7341a24bc62b7bd18f8352dba0d56abe23aafaa7"
     },
     {
       "act": 3,
@@ -431,7 +431,7 @@
       "label": "Capítulo IX",
       "title": "O Diálogo",
       "file": "capitulo-ato3-09.html",
-      "sourceSha256": "b5e393dd14d7f3ac8a48502cc4760de0279ac5094d48fc4c7fe97d53a21a4d9f"
+      "sourceSha256": "838c93ffd0b4a9495b54d836180b13f2ebf02d6a90ebc12df8af7e3b97d9fed7"
     },
     {
       "act": 3,
@@ -440,7 +440,7 @@
       "label": "Interlúdio II",
       "title": "Sistema Operacional ÔMEGA 14.2 — ALTERAÇÕES DE CONSENTIMENTO",
       "file": "interludio-omega.html",
-      "sourceSha256": "fa28bbd0af5a285192e2a1aca17720ff5079468503e6596c1bf2f4598f499c48"
+      "sourceSha256": "a43839430774163b911634666fc4ff900c742b7efe182fd5c7e99693a2a4c630"
     },
     {
       "act": 3,
@@ -449,7 +449,7 @@
       "label": "Capítulo X",
       "title": "Depois da Chuva",
       "file": "capitulo-ato3-10.html",
-      "sourceSha256": "8f839e3fea223ea6a532a065930e8f05b9d8ed1c6349a6c40ede76e115fc7621"
+      "sourceSha256": "57d2e3f45c7a5be775a810ba72993596d46536486affa17daf942e9d01c4ed52"
     },
     {
       "act": 3,
@@ -458,7 +458,7 @@
       "label": "Epílogo",
       "title": "O Barulho das Coisas Vivas",
       "file": "epilogo.html",
-      "sourceSha256": "9b67728f36c455935c4d5101955d21953fc27325449c10b510e2fde7e4cec1f9"
+      "sourceSha256": "7561450d7ac19741c11eb8350a118913175ae59b9a9193b74ee5b2b6c6be0ced"
     }
   ]
 }
