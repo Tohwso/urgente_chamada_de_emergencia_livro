@@ -2,6 +2,11 @@
    Without JavaScript, on small screens, or with reduced motion, the approved
    N45 illustration remains a conventional static intertext image. */
 
+/* 100cqw acompanha a área útil da página e exclui a barra de rolagem vertical. */
+body {
+  container-type: inline-size;
+}
+
 .pulse-immersive {
   position: relative;
 }
@@ -38,6 +43,7 @@
 @media (min-width: 761px) and (prefers-reduced-motion: no-preference) {
   .pulse-immersive.is-enhanced {
     width: 100vw;
+    width: 100cqw;
     height: 250svh;
     min-height: 1800px;
     position: relative;
@@ -146,6 +152,13 @@
 
   .pulse-immersive__copy--failure::before {
     content: "E não havia funcionado.";
+  }
+}
+
+@media (max-width: 760px) {
+  .pulse-immersive .pulse-immersive__frame {
+    width: 100vw;
+    width: 100cqw;
   }
 }
 
