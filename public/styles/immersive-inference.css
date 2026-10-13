@@ -2,10 +2,16 @@
    Em telas pequenas ou com movimento reduzido, a arte e o parágrafo completo
    permanecem juntos, sem depender de JavaScript. */
 
+/* 100cqw acompanha a área útil da página e exclui a barra de rolagem vertical. */
+body {
+  container-type: inline-size;
+}
+
 .inference-immersive {
   position: relative;
   left: 50%;
   width: 100vw;
+  width: 100cqw;
   margin: 64px 0;
   transform: translateX(-50%);
 }
@@ -217,6 +223,7 @@
 @media (max-width: 760px) {
   .inference-immersive__frame {
     width: 100vw;
+    width: 100cqw;
   }
 
   .inference-immersive__copy {

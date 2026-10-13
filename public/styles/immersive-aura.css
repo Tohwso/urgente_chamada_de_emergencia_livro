@@ -1,8 +1,14 @@
 /* AURA immersive reveal — Chapter VIII MVP
    Progressive enhancement: the existing static OFF/ON sequence remains the fallback. */
 
+/* 100cqw acompanha a área útil da página e exclui a barra de rolagem vertical. */
+body {
+  container-type: inline-size;
+}
+
 .aura-immersive {
   width: 100vw;
+  width: 100cqw;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -185,7 +191,13 @@
 @media (max-width: 760px) {
   .aura-immersive {
     width: 100vw;
+    width: 100cqw;
     margin: 40px 0;
+  }
+
+  .aura-immersive .scene-aura {
+    width: 100vw;
+    width: 100cqw;
   }
 
   .aura-immersive__stage::before {
