@@ -411,9 +411,9 @@
       "kind": "Capítulo",
       "number": 7,
       "label": "Capítulo VII",
-      "title": "A Confissão de Túlio",
+      "title": "A Confissão",
       "file": "capitulo-ato3-07.html",
-      "sourceSha256": "6301231698103b2b9dc3e351ae6a8778f7c4145e61c2c248e4d4efcfb3b029a4"
+      "sourceSha256": "0743e206b1a6cbea18abeb228011827c4334fd1d03c5d81996613f1068365b80"
     },
     {
       "act": 3,
@@ -422,7 +422,7 @@
       "label": "Capítulo VIII",
       "title": "Quem Pergunta ao Oráculo",
       "file": "capitulo-ato3-08.html",
-      "sourceSha256": "efcb5562e9b7d5fce20b694e7341a24bc62b7bd18f8352dba0d56abe23aafaa7"
+      "sourceSha256": "2922b6f5301f97dad6f11d109067f3aafbf75d5ec0ce3aca81fac395f90f63f9"
     },
     {
       "act": 3,
@@ -431,7 +431,7 @@
       "label": "Capítulo IX",
       "title": "O Diálogo",
       "file": "capitulo-ato3-09.html",
-      "sourceSha256": "838c93ffd0b4a9495b54d836180b13f2ebf02d6a90ebc12df8af7e3b97d9fed7"
+      "sourceSha256": "aded4d59cc1b358a36b2729f368b35409f8f7c3c4a9d40fc8b5d4a9fdb384c08"
     },
     {
       "act": 3,
@@ -449,7 +449,7 @@
       "label": "Capítulo X",
       "title": "Depois da Chuva",
       "file": "capitulo-ato3-10.html",
-      "sourceSha256": "57d2e3f45c7a5be775a810ba72993596d46536486affa17daf942e9d01c4ed52"
+      "sourceSha256": "8491b96c58155a545ef224ac01ae893c247892ff4941ac289955e1e1df748dbe"
     },
     {
       "act": 3,
@@ -458,7 +458,7 @@
       "label": "Epílogo",
       "title": "O Barulho das Coisas Vivas",
       "file": "epilogo.html",
-      "sourceSha256": "7561450d7ac19741c11eb8350a118913175ae59b9a9193b74ee5b2b6c6be0ced"
+      "sourceSha256": "8d6b0b88ca4cd8037492e6e41aac7dd772a4a6d46e348fa50f327681bb60a1cb"
     }
   ]
 }
