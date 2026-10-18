@@ -24,7 +24,7 @@
   <meta name="twitter:image" content="https://urgentechamada.com.br/assets/social/urgente-social-card.png">
   <title>Urgente! · Chamada de Emergência para o Fim do Mundo</title>
   <link rel="stylesheet" href="./styles/landing-depth.css?v=3">
-  <link rel="stylesheet" href="./styles/readers-nav.css">
+  <link rel="stylesheet" href="./styles/readers-nav.css?v=2">
 </head>
 <body>
 <div id="p1-official-baseline">
@@ -36,16 +36,8 @@
     #p1-official-baseline *,#p1-official-baseline *::before,#p1-official-baseline *::after{box-sizing:border-box}
     #p1-official-baseline :where(h1,h2,h3,p,figure){margin:0}
     #p1-official-baseline .official-home{width:100%;min-width:0;background-color:var(--o-canvas);background-image:radial-gradient(circle at 12% 8%,rgba(34,201,205,.13) 0 1.4px,transparent 2px),radial-gradient(circle at 86% 76%,rgba(42,159,156,.10) 0 1.4px,transparent 2px),repeating-linear-gradient(90deg,transparent 0 95px,rgba(34,201,205,.038) 96px,transparent 97px),repeating-linear-gradient(0deg,transparent 0 95px,rgba(237,241,243,.028) 96px,transparent 97px);background-size:260px 260px,340px 340px,100% 100%,100% 100%;color:var(--o-text);font-variation-settings:"wght" 410,"wdth" 96,"opsz" 48}
-    #p1-official-baseline .official-nav,#p1-official-baseline .official-hero-grid,#p1-official-baseline .official-inner,#p1-official-baseline .official-footer{width:min(calc(100% - 64px),1280px);margin-inline:auto;min-width:0}
-    #p1-official-baseline .official-nav{min-height:80px;padding-block:18px;display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:28px;border-bottom:1px solid rgba(237,241,243,.13);font-size:11px;line-height:1.6;letter-spacing:.12em;text-transform:uppercase;position:relative;z-index:5}
-    #p1-official-baseline .official-brand{display:flex;align-items:center;gap:12px;min-width:0;color:var(--o-text);text-decoration:none;font-weight:570}
-    #p1-official-baseline .brand-title{min-width:0}
-    #p1-official-baseline .official-brand strong{color:var(--o-cyan);font-weight:700}
-    #p1-official-baseline .d4-mark{display:block;flex:0 0 auto;width:20px;height:30px;object-fit:contain;filter:invert(1)}
-    #p1-official-baseline .official-links{display:flex;align-items:center;gap:22px}
-    #p1-official-baseline .official-links a{color:var(--o-muted);text-decoration:none;white-space:nowrap}
-    #p1-official-baseline .official-nav-cta,#p1-official-baseline .official-cta{display:inline-flex;align-items:center;justify-content:center;max-width:100%;border-radius:999px;background:var(--o-paper);color:var(--o-ink);text-decoration:none;text-align:center;text-transform:uppercase;letter-spacing:.14em;font-size:11px;line-height:1.6;font-weight:600;padding:12px 22px}
-    #p1-official-baseline .official-nav-cta{white-space:nowrap}
+    #p1-official-baseline .official-hero-grid,#p1-official-baseline .official-inner,#p1-official-baseline .official-footer{width:min(calc(100% - 64px),1280px);margin-inline:auto;min-width:0}
+    #p1-official-baseline .official-cta{display:inline-flex;align-items:center;justify-content:center;max-width:100%;border-radius:999px;background:var(--o-paper);color:var(--o-ink);text-decoration:none;text-align:center;text-transform:uppercase;letter-spacing:.14em;font-size:11px;line-height:1.6;font-weight:600;padding:12px 22px}
     #p1-official-baseline .official-cta{padding:17px 26px}
     #p1-official-baseline .official-kicker{color:var(--o-cyan);font-size:11px;line-height:1.7;letter-spacing:.24em;text-transform:uppercase;font-weight:650}
     #p1-official-baseline .official-heading{margin:0;padding:.06em .08em .12em 0;max-width:100%;min-width:0;font-weight:350;font-stretch:96%;letter-spacing:-.035em;line-height:1.16;overflow:visible;overflow-wrap:break-word}
@@ -106,10 +98,6 @@
     #p1-official-baseline .reading-gate .official-copy{font-size:17px}
     #p1-official-baseline .official-footer{min-height:88px;padding-block:28px;border-top:1px solid rgba(237,241,243,.12);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px 30px;color:var(--o-muted);font-size:11px;line-height:1.6;letter-spacing:.13em;text-transform:uppercase}
 
-    @container p1-home (max-width:1100px){
-      #p1-official-baseline .official-nav{grid-template-columns:minmax(0,1fr) auto}
-      #p1-official-baseline .official-links{display:none}
-    }
     @container p1-home (max-width:900px){
       #p1-official-baseline .official-hero-grid{grid-template-columns:minmax(0,1fr);gap:44px;padding-block:60px 72px}
       #p1-official-baseline .official-hero .official-heading{font-size:clamp(36px,6.2cqi,54px);max-width:680px}
@@ -119,14 +107,8 @@
       #p1-official-baseline .official-section-head .official-copy{max-width:540px;padding:0}
       #p1-official-baseline .character-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
     }
-    @container p1-home (max-width:760px){
-      #p1-official-baseline .brand-subtitle{display:none}
-    }
     @container p1-home (max-width:600px){
-      #p1-official-baseline .official-nav,#p1-official-baseline .official-hero-grid,#p1-official-baseline .official-inner,#p1-official-baseline .official-footer{width:calc(100% - 40px)}
-      #p1-official-baseline .official-nav{gap:16px}
-      #p1-official-baseline .brand-subtitle{display:none}
-      #p1-official-baseline .official-nav-cta{padding:11px 16px;letter-spacing:.1em}
+      #p1-official-baseline .official-hero-grid,#p1-official-baseline .official-inner,#p1-official-baseline .official-footer{width:calc(100% - 40px)}
       #p1-official-baseline .official-hero-grid{padding-block:44px 64px}
       #p1-official-baseline .official-hero .official-heading{font-size:clamp(32px,7.8cqi,44px)}
       #p1-official-baseline .official-section-head .official-heading{font-size:clamp(30px,7.2cqi,42px)}
